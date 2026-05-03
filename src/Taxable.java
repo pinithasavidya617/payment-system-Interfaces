@@ -1,2 +1,7 @@
-public class Taxable {
+public interface Taxable  {
+
+    double calculateTax();
+    double getTaxableAmount();
+
+
 }

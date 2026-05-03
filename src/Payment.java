@@ -1,4 +1,5 @@
 public abstract class Payment {
+    //blueprint, cannot create objects with an abstract class
     protected double amount;
     protected String merchant;
 
@@ -12,6 +13,7 @@ public abstract class Payment {
     }
 
     abstract void process();
+    //Any class that extends Payment MUST implement process()
 
     public double getAmount() {
         return amount;
